@@ -16,7 +16,7 @@
 
 3. 通过xshell建立ssh连接后输入`vi ~/.ssh/authorized_keys`准备输入公钥信息
 
-4. 本机打开刚才新建的公钥存储文件，后面是`id_rsa.pub`，用记事本打开，复制全部粘贴到xshell打开的`authorized_keys`中，用`wq!`保存关闭
+4. 本机打开刚才新建的公钥存储文件，后面是`id_rsa.pub`，用记事本打开，复制全部粘贴到xshell打开的`authorized_keys`中，用`wq`保存关闭
 
 5. 设置服务器允许基于密钥认证的方式登录（需要超级用户权限），输入`sudo vim /etc/ssh/sshd_config`，用`/Pub`快速定位，修改其中的`PubkeyAuthentication`为`yes`，我的情况是前面有个#，删掉它使之成为正文而不是批注
 
